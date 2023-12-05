@@ -103,8 +103,8 @@ If you want to mirror a repository in another location, including getting update
 1. Set the push location to your mirror.
 
    ```shell
-   cd REPOSITORY-TO-MIRROR
-   git remote set-url --push origin https://{% data variables.command_line.codeblock %}/EXAMPLE-USER/MIRRORED
+   cd REPOSITORY-TO-MIRROR.git
+   git remote set-url --push origin https://{% data variables.command_line.codeblock %}/EXAMPLE-USER/MIRRORED.git
    ```
 
     As with a bare clone, a mirrored clone includes all remote branches and tags, but all local references will be overwritten each time you fetch, so it will always be the same as the original repository. Setting the URL for pushes simplifies pushing to your mirror.
